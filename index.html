@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FUTO Sushi Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fondo">
+  <h1 id="title">FUTO Sushi - Satistación</h1>
+  <p id="description">¡Gracias por apoyar a FUTO Sushi a ser cada vez mejor!</p>
+  <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <fieldset>
+    <label id="name-label" for="name">Nombre <input id="name" name="nombre" type="text" required placeholder="Escriba su nombre" /></label>
+    <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Escriba su email" /></label>
+    <label id="number-label" for="number">Edad (opcional) <input id="number" name="email" type="number" required min="13" max="120" placeholder="Edad" /></label>
+    <label for="referrer">Por donde solicitaste tu pedido?
+      <select id="dropdown" name="referrer">
+        <option value="op0">seleciona uno</option>
+        <option value="op1">Whatsapp</option>
+        <option value="op2">Rappi</option>
+        <option value="op3">Pedidos Ya</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>¿Recomendarias FUTO Sushi para tus amigos(as)?</label>
+    <label for="si"><input id="si" type="radio" name="reccomend-type" class="inline" value="op1"/> Claro que sí</label>
+    <label for="talvez"><input id="talvez" type="radio" name="reccomend-type" class="inline" value="op2" /> Talvez</label>
+    <label for="no"><input id="no" type="radio" name="reccomend-type" class="inline" value="op3"/> No creo</label>
+    <label for="delivery">Como fue tu Delivery?
+      <select id="delivery" name="referrer">
+        <option value="op0">seleciona uno</option>
+        <option value="op1">Rápido</option>
+        <option value="op2">Tiempo normal</option>
+        <option value="op3">Demoro mucho</option>
+      </select>
+    </label>   
+  </fieldset>
+
+  <fieldset>
+    <label>¿Qué más te gusta de nuestra Carta?</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="1" />SASHIMI</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="2" />SASHIMI</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="3" />NIGIRI</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="4" />HOSOMAKIS</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="5" />GUNKAN</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="6" />TEMAKI</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="7" />POKES</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="8" />MAKIS</label>
+    <label for="menu-label"><input id="menu-label" type="checkbox" required name="menu-label" class="inline" value="9" />ADICIONALES (SALSAS) </label>
+    <label for="bio">Sugerencias:
+      <textarea id="sugerencias" name="sugerencias" rows="3" cols="30" placeholder="Me gustaria que..."></textarea>
+  </fieldset>
+
+  <input id="submit" type="submit" value="Submit" />
+
+    <footer>
+        <p>
+          <a href="https://www.instagram.com/futosushiperu/" target="_blank">Siganos en Instagram</a>
+        </p>
+        <p class="address">FUTO SUSHI te espera en tu proximo pedido</p>
+      </footer>
+
+  </body>
+</html>
